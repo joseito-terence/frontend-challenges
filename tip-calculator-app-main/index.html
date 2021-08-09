@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+  <div class="container">
+    <header>
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </header>
+
+    <section class="cal">
+      <div class="cal_options">
+        <div>
+          <label class="options_title" for="bill">Bill</label>
+          <div class='form-input'>
+            <img src="./images/icon-dollar.svg" alt="">
+            <input id="bill" type="text" placeholder="0">
+          </div>
+        </div>
+        
+        <div>
+          <label class="options_title">Select Tip %</label>
+          <div class="tip">
+            <label>
+              <input type="radio" class="d-none" name="tip" value="5">
+              <span>5%</span>
+            </label>
+            <label>
+              <input type="radio" class="d-none" name="tip" value="10">
+              <span>10%</span>
+            </label>
+            <label>
+              <input type="radio" class="d-none" name="tip" value="15">
+              <span>15%</span>
+            </label>
+            <label>
+              <input type="radio" class="d-none" name="tip" value="25">
+              <span>25%</span>
+            </label>
+            <label>
+              <input type="radio" class="d-none" name="tip" value="50">
+              <span>50%</span>
+            </label>
+            <label>
+              <input type="radio" id="custom-tip-radio" class="d-none" name="tip" value="custom">
+              <input type="text" id="custom-tip" placeholder="Custom">
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label class="options_title" for="people">Number of People</label>
+          <div class='form-input'>
+            <img src="./images/icon-person.svg" alt="">
+            <input id="people" type="text" placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="cal_result">
+        <div>
+          <div class="result-group">
+            <div class="title">
+              <h2>Tip Amount</h2>
+              <small>/ person</small>
+            </div>
+            <div id="tip-amt" class="amount">
+              $0.00
+            </div>
+          </div>
+          <div class="result-group">
+            <div class="title">
+              <h2>Total</h2>
+              <small>/ person</small>
+            </div>
+            <div id="total" class="amount">
+              $0.00
+            </div>
+          </div>
+        </div>
+        
+
+        <button class="btn-reset">
+          RESET
+        </button>
+      </div>
+    </section>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
