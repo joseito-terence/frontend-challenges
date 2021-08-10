@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <h1>sunnyside</h1>
+    <img src="./images/logo.svg" alt="logo">
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -22,19 +22,25 @@
   </header>
 
   <section class="hero">
-    <h2>We are creatives</h2>
-    <img src="./images/desktop/image-header.jpg" alt="">
-    <img src="./images/icon-arrow-down.svg" alt="">
+    <img class="hero__image" src="./images/desktop/image-header.jpg" alt="">
+    
+    <div>
+      <h2>We are creatives</h2>
+      <img class="arrow_down" src="./images/icon-arrow-down.svg" alt="">
+    </div>
   </section>
 
   <section class="container">
-    <div>
+    <div class="text-only">
       <h3>Transform your brand</h3>
       <p>We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.
       </p>
 
-      <a href="#learn-more">LEARN MORE</a>
+      <a href="#learn-more">
+        LEARN MORE
+        <div class="a-underline yellow"></div>
+      </a>
     </div>
 
     <div>
@@ -44,25 +50,35 @@
       <img src="./images/desktop/image-stand-out.jpg" alt="stand out">
     </div>
 
-    <div>
+    <div class="text-only">
       <h3>Stand out to the right audience</h3>
       <p> 
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
       </p>
 
-      <a href="#learn-more">LEARN MORE</a>
+      <a href="#learn-more">
+        LEARN MORE
+        <div class="a-underline soft-red"></div>
+      </a>
+      
     </div>
 
-    <div>
+    <div class="p-relative">
       <img src="./images/desktop/image-graphic-design.jpg" alt="graphic design">
-      <h3>Graphic Design</h3>
-      <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      
+      <div class="text-overlay dark-cyan">
+       <h3>Graphic Design</h3>
+        <p> Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
     </div>
 
-    <div>
+    <div class="p-relative">
       <img src="./images/desktop/image-photography.jpg" alt="graphic design">
-      <h3>Photography</h3>
-      <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      
+      <div class="text-overlay dark-blue">
+        <h3>Photography</h3>
+        <p> Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
     </div>
 
   </section>
@@ -87,7 +103,7 @@
       <small>Chief Operating Officer</small>
     </div>
     <div class="testimony">
-      <img src="./images/image-emily.jpg" alt="emily r.">
+      <img src="./images/image-jennie.jpg" alt="emily r.">
       <p>
         Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
       </p>
