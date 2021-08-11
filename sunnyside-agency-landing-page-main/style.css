@@ -138,8 +138,8 @@ header nav > ul a:hover {
   height: 100%;
   top: 0;
   text-align: center;
-  padding: 9vw;
-  transform: translateY(60px);
+  padding: 11vw;
+  transform: translateY(70px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -173,7 +173,7 @@ header nav > ul a:hover {
   color: #a7abae;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
 }
 .testimonials .testimony {
@@ -220,4 +220,40 @@ header nav > ul a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  background-color: #90d4c5;
+}
+footer img.logo {
+  width: 10em;
+}
+footer svg > path {
+  fill: #2a7264;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer ul.nav-links {
+  width: 24em;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+footer ul.nav-links a {
+  color: #458c7e;
+  font-family: "Barlow", sans-serif;
+  transition: color 500ms;
+}
+footer ul.nav-links a:hover {
+  color: white;
+}
+footer ul.contact {
+  width: 14em;
 }/*# sourceMappingURL=style.css.map */
