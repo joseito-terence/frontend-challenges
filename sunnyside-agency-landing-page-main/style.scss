@@ -157,13 +157,55 @@ header {
     }
 
     p {
-      font-size: 1.4vw;
+      font-size: 1.2vw;
       font-family: 'Barlow', sans-serif;
       line-height: 1.4rem;
     }
   }
   .dark-blue { color: $Dark-blue; }
   .dark-cyan { color: $Dark-desaturated-cyan; }
-
 }
 
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  margin: 7rem 2rem;
+
+  h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    color: $Grayish-blue;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: .8rem;
+    margin-bottom: 3rem;
+  }
+
+  .testimony {
+    text-align: center;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    p {
+      font-family: 'Barlow', sans-serif;
+      font-size: .7rem;
+      color: $Very-dark-desaturated-blue;
+      margin: 2rem 0;
+    }
+    h4 {
+      color: $Very-dark-desaturated-blue;
+      font-size: .9em;
+    }
+    small {
+      font-family: 'Barlow', sans-serif;
+      color: $Grayish-blue;
+      font-size: .6rem;
+    }
+  }
+}
