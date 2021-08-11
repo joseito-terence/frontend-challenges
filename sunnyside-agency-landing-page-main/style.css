@@ -164,7 +164,7 @@ header nav > ul a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.8rem;
-  margin: 7rem 2rem;
+  margin: 7rem;
 }
 .testimonials h3 {
   grid-column-start: 1;
@@ -173,11 +173,12 @@ header nav > ul a:hover {
   color: #a7abae;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 3rem;
 }
 .testimonials .testimony {
   text-align: center;
+  position: relative;
 }
 .testimonials .testimony img {
   width: 80px;
@@ -188,16 +189,35 @@ header nav > ul a:hover {
 }
 .testimonials .testimony p {
   font-family: "Barlow", sans-serif;
-  font-size: 0.7rem;
-  color: #23303e;
-  margin: 2rem 0;
+  font-size: 1.2rem;
+  color: #818498;
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+.testimonials .testimony div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .testimonials .testimony h4 {
   color: #23303e;
-  font-size: 0.9em;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
 }
 .testimonials .testimony small {
   font-family: "Barlow", sans-serif;
   color: #a7abae;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
