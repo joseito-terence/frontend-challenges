@@ -11,6 +11,11 @@
 <body>
   <header>
     <img src="./images/logo.svg" alt="logo">
+    
+    <button class="hamburger-btn d-none">
+      <img src="./images/icon-hamburger.svg" alt="hamburger menu">
+    </button>
+    
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -37,10 +42,8 @@
         Engage your clients through compelling visuals that do most of the marketing for you.
       </p>
 
-      <a href="#learn-more">
-        LEARN MORE
-        <div class="a-underline yellow"></div>
-      </a>
+      <a href="#learn-more">LEARN MORE</a>
+      <div class="a-underline yellow"></div>
     </div>
 
     <div>
@@ -56,11 +59,8 @@
         Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
       </p>
 
-      <a href="#learn-more">
-        LEARN MORE
-        <div class="a-underline soft-red"></div>
-      </a>
-      
+      <a href="#learn-more">LEARN MORE</a>
+      <div class="a-underline soft-red"></div>
     </div>
 
     <div class="p-relative">
@@ -149,6 +149,14 @@
 
   </footer>
 
+  <script>
+    const ham_btn = document.querySelector('.hamburger-btn');
+    const ham_menu = document.querySelector('nav');
+
+    ham_btn.onclick = () => {
+      ham_menu.classList.toggle('display-menu');
+    }
+  </script>
 
 
 </body>
