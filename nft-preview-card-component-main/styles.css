@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #0d192b;
+  color: white;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card {
+  background-color: #14253d;
+  max-width: 350px;
+  padding: 1.5rem;
+  border-radius: 1.2em;
+}
+
+.card .card-image {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border-radius: .5em;
+}
+
+.card .card-image > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.card .card-image .image-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00fff775;
+  overflow: hidden;
+  -webkit-transition: opacity 700ms;
+  transition: opacity 700ms;
+}
+
+.card .card-image:hover .image-overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card .card-title {
+  font-size: 1.25rem;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+}
+
+.card .card-title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card .card-text {
+  font-size: .97em;
+  font-weight: 300;
+  line-height: 1.8rem;
+  padding: .85rem 0;
+  color: #8bacda;
+}
+
+.card .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: .8rem;
+  margin-bottom: .8rem;
+  border-bottom: 0.1px solid #2f415b;
+}
+
+.card .card-info span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-info span .card-info-text {
+  margin-left: .5rem;
+  font-size: .9rem;
+}
+
+.card .card-info span .eth-value {
+  color: #00fff7;
+  font-weight: bold;
+}
+
+.card .card-info span .time {
+  color: #94acd2;
+}
+
+.card .card-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-author .avatar {
+  width: 32px;
+  border: .5px solid white;
+  border-radius: 50%;
+}
+
+.card .card-author .caption {
+  font-size: .95rem;
+  font-stretch: semi-expanded;
+  margin-left: 1rem;
+  color: #8bacda;
+}
+
+.card .card-author .caption .author {
+  color: white;
+  margin-left: .2rem;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+}
+
+.card .card-author .caption .author:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
