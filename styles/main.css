@@ -28,7 +28,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1e1f26;
-  padding: 3rem;
+  padding: 3rem 1rem;
+  text-align: center;
   font-family: 'Francois One', sans-serif;
 }
 
@@ -109,6 +110,14 @@ header h3 a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card .card-body > a {
+  width: 62%;
+}
+
+.card .card-body .card-buttons {
+  min-width: 108px;
 }
 
 .card .card-title {
