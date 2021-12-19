@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&family=Outfit:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -7,10 +8,66 @@
 }
 
 body {
-  margin: 40px;
   /* font-family: 'Outfit', sans-serif; */
   background-color: #131417;
   color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1e1f26;
+  padding: 3rem;
+  font-family: 'Francois One', sans-serif;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+header h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.3rem;
+}
+
+header h3 {
+  font-size: 1rem;
+  color: #b7bbc8;
+}
+
+header h3 a {
+  text-decoration: none;
+  color: #b7bbc8;
+}
+
+header h3 a:hover {
+  color: #ff7474;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  justify-items: center;
+  grid-gap: 3rem 3rem;
+  margin: 40px;
 }
 
 .card {
@@ -26,6 +83,11 @@ body {
 
 .card .card-image {
   width: 100%;
+  aspect-ratio: 4/3;
+}
+
+.card .card-image img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -33,7 +95,7 @@ body {
 }
 
 .card .card-body {
-  margin-top: .7rem;
+  margin-top: .6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,41 +135,47 @@ body {
 }
 
 .card .card-background {
-  --radius: 10px;
-  --inset: 2rem;
-  --inset-right: 0;
-  --offset: -1rem;
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: var(--offset);
-  border-radius: var(--radius);
+  margin: -1rem;
+  border-radius: 10px;
   overflow: hidden;
   z-index: -1;
   background: #1e1f26;
-  -webkit-clip-path: inset(var(--inset-top, var(--inset)) var(--inset-right, var(--inset)) var(--inset-bottom, var(--inset)) var(--inset-left, var(--inset)) round var(--radius));
-          clip-path: inset(var(--inset-top, var(--inset)) var(--inset-right, var(--inset)) var(--inset-bottom, var(--inset)) var(--inset-left, var(--inset)) round var(--radius));
+  -webkit-clip-path: inset(26px 0px 26px 26px round 10px);
+          clip-path: inset(26px 0px 26px 26px round 10px);
   -webkit-transition: -webkit-clip-path .3s ease .1s;
   transition: -webkit-clip-path .3s ease .1s;
   transition: clip-path .3s ease .1s;
   transition: clip-path .3s ease .1s, -webkit-clip-path .3s ease .1s;
+  contain: strict;
 }
 
 .card:hover .card-background {
-  -webkit-clip-path: inset(0 0 0 0 round var(--radius));
-          clip-path: inset(0 0 0 0 round var(--radius));
+  -webkit-clip-path: inset(0 0 0 0 round 10px);
+          clip-path: inset(0 0 0 0 round 10px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 
-.btn {
+.card:hover .btn {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 0.15, 0.1, 1), ease;
+          transition-timing-function: cubic-bezier(0.2, 0.15, 0.1, 1), ease;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.card .btn {
   font-size: .8rem;
   margin-right: 5px;
   border-radius: 4px;
-  cursor: pointer;
   color: #ffffff;
   background-color: #000000;
   border: 0;
@@ -125,22 +193,12 @@ body {
           transition-timing-function: cubic-bezier(1, 0, 0.65, 0.75), linear;
 }
 
-.btn:nth-child(2) {
+.card .btn:nth-child(2) {
   -webkit-transition-delay: .05s !important;
           transition-delay: .05s !important;
 }
 
-.btn:hover {
+.card .btn:hover {
   background: #5a5f73;
-}
-
-.card:hover .btn {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 0.15, 0.1, 1), ease;
-          transition-timing-function: cubic-bezier(0.2, 0.15, 0.1, 1), ease;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
 }
 /*# sourceMappingURL=main.css.map */

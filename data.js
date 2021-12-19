@@ -1,4 +1,4 @@
-[
+export const challenges = [
   {
     "src": "nft-preview-card-component-main",
     "title": "NFT Preview Card",
