@@ -1,7 +1,7 @@
 
 const Card = ({ src, title, image, date }) => `
   <div class="card">
-    <a href="/frontend-challenges/challenges/${src}/">
+    <a href="challenges/${src}/">
       <div class="card-background"></div>
       <div class="card-image">
         <img src='challenges/${src}/design/${image}' />
@@ -17,7 +17,7 @@ const Card = ({ src, title, image, date }) => `
         </div>
         <div class="card-buttons">
           <a href="https://github.com/joseito-terence/frontend-challenges/tree/master/challenges/${src}/" class="btn">Code</a>
-          <a href="/frontend-challenges/challenges/${src}/" class="btn">View</a>
+          <a href="challenges/${src}/" class="btn">View</a>
         </div>
       </div>
     </a>
