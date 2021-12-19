@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 40px;
+  /* font-family: 'Outfit', sans-serif; */
+  background-color: #131417;
+  color: white;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card .card-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+
+.card .card-body {
+  margin-top: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 900;
+  font-size: 17px;
+  margin: 0 0 .25rem;
+  display: block;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-align: right;
+}
+
+.card .card-text {
+  color: #b7bbc8;
+  font-size: 14px;
+  line-height: 1.2;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  text-align: right;
+  display: block;
+}
+
+.card .card-background {
+  --radius: 10px;
+  --inset: 2rem;
+  --inset-right: 0;
+  --offset: -1rem;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: var(--offset);
+  border-radius: var(--radius);
+  overflow: hidden;
+  z-index: -1;
+  background: #1e1f26;
+  -webkit-clip-path: inset(var(--inset-top, var(--inset)) var(--inset-right, var(--inset)) var(--inset-bottom, var(--inset)) var(--inset-left, var(--inset)) round var(--radius));
+          clip-path: inset(var(--inset-top, var(--inset)) var(--inset-right, var(--inset)) var(--inset-bottom, var(--inset)) var(--inset-left, var(--inset)) round var(--radius));
+  -webkit-transition: -webkit-clip-path .3s ease .1s;
+  transition: -webkit-clip-path .3s ease .1s;
+  transition: clip-path .3s ease .1s;
+  transition: clip-path .3s ease .1s, -webkit-clip-path .3s ease .1s;
+}
+
+.card:hover .card-background {
+  -webkit-clip-path: inset(0 0 0 0 round var(--radius));
+          clip-path: inset(0 0 0 0 round var(--radius));
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.btn {
+  font-size: .8rem;
+  margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+  border: 0;
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600 !important;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0.65, 0.75), linear;
+          transition-timing-function: cubic-bezier(1, 0, 0.65, 0.75), linear;
+}
+
+.btn:nth-child(2) {
+  -webkit-transition-delay: .05s !important;
+          transition-delay: .05s !important;
+}
+
+.btn:hover {
+  background: #5a5f73;
+}
+
+.card:hover .btn {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 0.15, 0.1, 1), ease;
+          transition-timing-function: cubic-bezier(0.2, 0.15, 0.1, 1), ease;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+/*# sourceMappingURL=main.css.map */
