@@ -3,7 +3,7 @@
 A collection of frontend web dev challenges that I have done.
 
 
-## Live Demo
+## View Live 
 Check it out @ [frontend-challenges](https://joseito-terence.github.io/frontend-challenges/)
 
 
