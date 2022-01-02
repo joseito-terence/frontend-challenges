@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700&family=Outfit:wght@300;400;600&family=Rubik:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  background-color: gray;
+  height: 70vh;
+}
+
+header {
+  background-image: url('./images/pattern-bg.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 1rem;
+
+  h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    width: 100%;
+    margin-top: 1.2rem;
+    margin-bottom: 6rem;
+
+    input, button {
+      padding: .8rem 1rem;
+      font-size: 18px;
+      border: none;
+    }
+
+    input {
+      width: 95%;
+      border-radius: .8rem 0 0 .8rem;
+    }
+
+    button {
+      background-color: black;
+      border-radius: 0 .8rem .8rem 0;
+      cursor: pointer;
+      transition: background-color 500ms ease-in-out;
+
+      &:hover {
+        background-color: #656565;
+      }
+    }
+
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 1rem;
+  padding-bottom: 0;
+  border-radius: .8rem;
+  width: 95%;
+  margin: auto;
+  margin-top: -7.5rem;
+  position: relative;
+  z-index: 1000000;
+
+  h3 {
+    text-align: center;
+    color:  hsl(0, 0%, 59%);
+    font-size: .8rem;
+    margin-bottom: .5rem
+  }
+
+  span {
+    text-align: center;
+    color: hsl(0, 0%, 17%);
+    font-weight: 500;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  margin-top: -10rem;
+}
+
+@media screen and (min-width: 588px) {
+  header > form {
+    width: 500px;
+    margin-bottom: 3rem;
+  }
+
+  .info { 
+    flex-direction: row;
+    align-items: flex-start;
+    width: fit-content;
+    margin-top: -4rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    div {
+      padding: 1rem 1.5rem;
+      height: 100%;
+      border-right: .5px solid #d9d9d9;
+    }
+
+    div:last-child {
+      border: none
+    }
+
+    h3 {
+      text-align: left;
+    }
+    
+    span {
+      text-align: left;
+      font-size: 1.5rem;
+    }
+  }
+
+  #map {
+    margin-top: -5.2rem;
+  }
+}
