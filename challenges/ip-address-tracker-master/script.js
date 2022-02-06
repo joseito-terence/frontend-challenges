@@ -9,6 +9,7 @@
 
 var map = L.map('map').setView([37.38605, -122.08385], 13);
 
+var marker;
 const tiles = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
   maxZoom: 18,
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
@@ -29,6 +30,11 @@ async function handleSubmit(event) {
 
 async function initialize() {
   const res = await ipify('8.8.8.8');
+
+  const { lat, lng } = res.location;
+  const icon = L.icon({ iconUrl: './images/icon-location.svg' });
+  marker = L.marker([lat, lng], { icon }).addTo(map);
+  
   refreshUI(res);
 }
 
@@ -48,10 +54,8 @@ async function ipify(ipAddress) {
 }
 
 function positionMarker(lat, lng) {
-  const icon = L.icon({ iconUrl: './images/icon-location.svg' });
-
-  const marker = L.marker([lat, lng], { icon }).addTo(map);
+  marker.setLatLng([lat, lng]);
+  map.setView([lat, lng]);
 }
 
 const $ = (selector) => document.querySelector(selector);
-

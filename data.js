@@ -1,5 +1,11 @@
 export const challenges = [
   {
+    "src": "ip-address-tracker-master",
+    "title": "IP Address Tracker",
+    "image": "desktop-design.jpg",
+    "date": "February 6, 2022"
+  },
+  {
     "src": "nft-preview-card-component-main",
     "title": "NFT Preview Card",
     "image": "desktop-design.jpg",
