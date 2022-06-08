@@ -1,0 +1,127 @@
+* {
+  -webkit-transition: all 400ms ease 0ms;
+  transition: all 400ms ease 0ms;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  height: 100vh;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 108px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__image-portrait {
+  height: 164px;
+  overflow: hidden;
+  width: 100%;
+  opacity: 1;
+}
+
+.card__title {
+  font: 14px/20px arial,sans-serif;
+  letter-spacing: .2px;
+  color: black;
+}
+
+.card__imageContainer {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 162px;
+  background-size: cover;
+}
+
+.card__imageOverlay {
+  width: 92%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0) radial-gradient(at center top, rgba(32, 33, 36, 0.2), rgba(32, 33, 36, 0.8), transparent 412.931px) repeat scroll 0% 0%;
+  padding: 12px;
+  font-family: arial,sans-serif;
+  display: none;
+}
+
+.card:hover {
+  width: 254px;
+}
+
+.card:hover .card__image-portrait {
+  opacity: 0;
+  height: 300px;
+}
+
+.card:hover .card__imageOverlay {
+  display: block;
+}
+
+.movie {
+  color: white;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.movie__name {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 40px;
+  text-shadow: 0 1px 2px #3c4043,0 1px 3px #3c4043;
+  white-space: normal;
+  width: 230px;
+}
+
+.movie__info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  margin-top: 7px;
+  min-height: 16px;
+  text-shadow: 0 1px 2px #3c4043,0 1px 3px #3c4043;
+}
+
+.movie__infoSeparator {
+  margin: 0 4px;
+}
+
+.movie__rating {
+  border: solid #fff 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  margin-right: 8px;
+  padding: 0 3px;
+}
+/*# sourceMappingURL=styles.css.map */
