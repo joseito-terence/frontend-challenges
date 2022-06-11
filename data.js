@@ -2,7 +2,7 @@ export const challenges = [
   {
     "src": "movie-card",
     "title": "Google Movie Card",
-    "image": "preview.png",
+    "image": "preview.jpg",
     "date": "June 11, 2022"
   },
   {
