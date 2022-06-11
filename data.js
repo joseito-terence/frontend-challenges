@@ -1,5 +1,11 @@
 export const challenges = [
   {
+    "src": "movie-card",
+    "title": "Google Movie Card",
+    "image": "preview.png",
+    "date": "June 11, 2022"
+  },
+  {
     "src": "ip-address-tracker-master",
     "title": "IP Address Tracker",
     "image": "desktop-design.jpg",
