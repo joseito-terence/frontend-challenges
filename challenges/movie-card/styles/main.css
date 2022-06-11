@@ -3,14 +3,6 @@
   transition: all 400ms ease 0ms;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
-  height: 100vh;
-}
-
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -21,7 +13,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 108px;
+  width: 142px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -32,7 +24,7 @@ body {
 }
 
 .card__image-portrait {
-  height: 164px;
+  height: 214px;
   overflow: hidden;
   width: 100%;
   opacity: 1;
@@ -48,26 +40,29 @@ body {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  height: 162px;
+  height: 214px;
   background-size: cover;
 }
 
 .card__imageOverlay {
   width: 92%;
-  height: 86%;
+  height: 90%;
   background: rgba(0, 0, 0, 0) radial-gradient(at center top, rgba(32, 33, 36, 0.2), rgba(32, 33, 36, 0.8), transparent 412.931px) repeat scroll 0% 0%;
   padding: 12px;
   font-family: arial,sans-serif;
   display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .card:hover {
-  width: 254px;
+  width: 304px;
 }
 
 .card:hover .card__image-portrait {
   opacity: 0;
-  height: 300px;
+  height: 450px;
 }
 
 .card:hover .card__imageOverlay {
@@ -124,4 +119,4 @@ body {
   margin-right: 8px;
   padding: 0 3px;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,39 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Challenge: Movie Card</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./src/index.js" type="module"></script>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    #root {
+      display: flex;
+      gap: 12px;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="root"></div>
-  <div class="card">
-    <div 
-      class="card__imageContainer" 
-      style="background-image: url('https://www.themoviedb.org/t/p/w533_and_h300_bestv2/41yaWnIT8AjIHiULHtTbKNzZTjc.jpg')"
-    >
-    <div class="card__imageOverlay">
-
-      <div class="movie">
-        <div class="movie__name">
-          Fantastic Beasts: The Secrets of Dumbledore
-        </div>
-        <div class="movie__info text-truncate">
-          <div class="movie__rating">PG-13</div>
-          <div class="movie__duration">1h 52m</div>
-          <div class="movie__infoSeparator">·</div>
-          <div class="movie__year">2022</div>
-        </div>
-      </div>
-
-    </div>
-    <img 
-      src="https://www.themoviedb.org/t/p/w220_and_h330_face/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg" alt="card_image"
-      class="card__image-portrait"
-    >
-    </div>
-    <h1 class="card__title text-truncate">Fantastic Beasts: The Secrets of Dumbledore</h1>
-  </div>
-
+  <div id="root"></div>
 </body>
 
 </html>

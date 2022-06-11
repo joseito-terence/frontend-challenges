@@ -1,12 +1,11 @@
+// image ratio: 2 * 3
+$image_height: 214px;
+$image_width: 142px;
+$image_hover_width: 304px;
+$image_hover_height: 450px;
+
 * {
   transition: all 400ms ease 0ms;
-}
-
-body {
-  display: flex;
-  gap: 12px;
-  height: 100vh;
-  // background-color: #1a1c1d;
 }
 
 .text-truncate {
@@ -17,12 +16,12 @@ body {
 
 .card {
   display: flex;
-  width: 108px;
+  width: $image_width;
   height: fit-content;
   flex-direction: column;
 
   &__image-portrait {
-    height: 164px;
+    height: $image_height;
     overflow: hidden;
     width: 100%;
     opacity: 1;
@@ -38,26 +37,29 @@ body {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    height: 162px;
+    height: $image_height;
     background-size: cover;
   }
 
   &__imageOverlay {
     width: 92%;
-    height: 86%;
+    height: 90%;
     background: rgba(0, 0, 0, 0) radial-gradient(at center top, rgba(32, 33, 36, 0.2), rgba(32, 33, 36, 0.8), transparent 412.931px) repeat scroll 0% 0%;
     padding: 12px;
     font-family: arial,sans-serif;
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
 .card:hover {
-  width: 254px;
+  width: $image_hover_width;
 
   .card__image-portrait {
     opacity: 0;
-    height: 300px;
+    height: $image_hover_height;
   }
 
   .card__imageOverlay {
