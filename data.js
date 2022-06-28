@@ -1,5 +1,11 @@
 export const challenges = [
   {
+    "src": "advice-generator-app-main",
+    "title": "Advice Generator",
+    "image": "desktop-design.jpg",
+    "date": "June 28, 2022"
+  },
+  {
     "src": "movie-card",
     "title": "Google Movie Card",
     "image": "preview.jpg",
