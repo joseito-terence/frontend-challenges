@@ -1,14 +1,25 @@
 import styled from 'styled-components'
 import type { ChallengeType } from '../types'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
   <StyledWrapper>
     <div className="card">
-      {/* // <a href={`challenges/${src}/`}> */}
       <div className="card-background" />
-      <div className="card-image">
-        <img src={`assets/challenges/${src}/design/${image}`} />
-      </div>
+      <Link href={`/challenges/${src}/`} passHref>
+        <a>
+          <div className="card-image">
+            <Image
+              src={`/assets/challenges/${src}/design/${image}`}
+              width={400}
+              height={300}
+              alt={title}
+            />
+          </div>
+
+        </a>
+      </Link>
       <div className="card-body">
         <div className="card-info">
           <h2 className="card-title">
@@ -27,19 +38,18 @@ const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
           </a>
         </div>
       </div>
-      {/* </a> */}
     </div>
   </StyledWrapper>
 )
 
 export default Card
 
-
 const StyledWrapper = styled.div`
   .card {
     width: 100%;
     height: 100%;
     position: relative;
+    font-family: 'Lato', sans-serif;
 
     a {
       text-decoration: none;
@@ -92,19 +102,14 @@ const StyledWrapper = styled.div`
     }
 
     .card-background {
-      --radius: 10px;
-      --inset: 2rem;
-      --inset-right: 0;
-      --offset: -1rem;
       content: '';
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-
-      margin: var(--offset);
-      border-radius: var(--radius);
+      margin: -1rem;
+      border-radius: 10px;
       overflow: hidden;
       z-index: -1;
       background: #1e1f26;
