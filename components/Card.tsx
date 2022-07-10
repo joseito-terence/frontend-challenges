@@ -50,6 +50,7 @@ const StyledWrapper = styled.div`
     height: 100%;
     position: relative;
     font-family: 'Lato', sans-serif;
+    z-index: 0;
 
     a {
       text-decoration: none;
