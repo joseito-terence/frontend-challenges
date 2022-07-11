@@ -4,7 +4,7 @@ import Image from 'next/image'
 import IllustrationHero from '../../public/assets/challenges/order-summary-component-main/images/illustration-hero.svg'
 import styled from 'styled-components'
 
-const Home: NextPage = () => {
+const OrderSummary: NextPage = () => {
   return (
     <PageWrapper>
       <Head>
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default OrderSummary
 
 const PageWrapper = styled.div`
   display: grid;
