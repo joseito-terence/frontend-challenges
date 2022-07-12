@@ -30,12 +30,14 @@ const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
           </small>
         </div>
         <div className="card-buttons">
-          <a href={`https://github.com/joseito-terence/frontend-challenges/tree/master/challenges/${src}/`} className="btn">
+          <a href={`https://github.com/joseito-terence/frontend-challenges/tree/master/pages/challenges/${src}/`} className="btn">
             Code
           </a>
-          <a href={`challenges/${src}/`} className="btn">
-            View
-          </a>
+          <Link href={`/challenges/${src}/`} passHref>
+            <a className="btn">
+              View
+            </a>
+          </Link>
         </div>
       </div>
     </div>
