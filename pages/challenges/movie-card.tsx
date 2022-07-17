@@ -3,6 +3,7 @@ import type { MovieType } from "../../types"
 import styled from "styled-components"
 import { useQuery } from "react-query"
 import Image from "next/future/image"
+import Head from "next/head"
 
 const fetchMovies = async (): Promise<MovieType[]> => fetch("/api/movies").then(res => res.json())
 
@@ -11,6 +12,10 @@ const Page: NextPage = () => {
 
   return (
     <PageWrapper>
+      <Head>
+        <title>Challenge: Movie Card</title>
+      </Head>
+
       {movies?.map((movie, idx) =>
         <MovieCard key={idx} {...movie} />
       )}
