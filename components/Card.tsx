@@ -31,7 +31,7 @@ const Card: React.FC<ChallengeType> = ({ src, title, image, date }) => (
         </div>
         <div className="card-buttons">
           <a 
-            href={`https://github.com/joseito-terence/frontend-challenges/tree/master/pages/challenges/${src}/`} 
+            href={`https://github.com/joseito-terence/frontend-challenges/tree/master/pages/challenges/${src}.tsx`} 
             className="btn"
             target="_blank"
             rel="noreferrer"
