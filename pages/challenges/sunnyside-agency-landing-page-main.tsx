@@ -72,10 +72,9 @@ const HeroSection = () => (
     <Image 
       className="hero__image" 
       src={HeroImage} 
-      alt="hero image" 
-      placeholder="blur"
-      height={700}
-      style={{ objectFit: "cover" }}
+      alt="hero image"
+      height={900}
+      style={{ objectFit: "cover", height: "100vh" }}
     />
 
     <div>

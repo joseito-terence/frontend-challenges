@@ -37,7 +37,6 @@ const StatsPreviewCard = () => {
           <Image 
             src={HeaderImage} 
             alt="header image"
-            placeholder="blur"
           />
         </div>
 
