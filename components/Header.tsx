@@ -44,5 +44,13 @@ const StyledHeader = styled.header`
       }
     }
   }
+
+  &:after {
+    content: "FRONTEND WEB DEV";
+    position: absolute;
+    color: #eaeaea04;
+    font-size: 10rem;
+    width: 150%;
+  }
 `
 export default Header
