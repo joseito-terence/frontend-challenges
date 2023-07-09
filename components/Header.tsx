@@ -20,6 +20,8 @@ const StyledHeader = styled.header`
   padding: 3rem 1rem;
   text-align: center;
   font-family: 'Francois One', sans-serif;
+  position: relative;
+  overflow: hidden;
 
   h1 {
     text-transform: uppercase;
